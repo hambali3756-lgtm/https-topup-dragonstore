@@ -1,0 +1,133 @@
+:root 
+{
+    --blue : #2c2546;
+    --dark-blue: #1B1535;
+    --green : #00eb09;
+    --white : #fff;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+
+body 
+{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding-top: 120px;
+}
+
+header
+{
+text-align: center;
+background-color: var(--blue);
+position: fixed;
+width: 100%;
+font-weight: bold;
+padding: 2%;
+top: 0;
+}
+
+.title
+{
+    color: var(--green);
+    border-block: 1px solid  var(--white);
+}
+
+.input-search
+{
+    width: 30%;
+    border: none;
+    border-radius: 0 0 0 20px;
+    padding: 2px;
+}
+
+.input-submit
+{
+   margin-left: -5px;
+    border: none;
+    border-radius: 0 20px 0 0;
+    padding: 2px;
+    background-color: var(--green);
+    color: var(--blue);
+    width: 5%;
+    font-weight: bold;
+}
+
+nav
+{
+    margin-top: 15px;
+}
+
+nav ul
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a 
+{
+    color: var(--green);
+}
+
+nav ul li a:hover
+{
+    border-bottom: 3px solid var(--white);
+}
+
+.carousel {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  transition: 0.5s;
+}
+
+.card {
+  min-width: 70%;
+  margin: 0 15px;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dots span {
+  width: 30px;
+  height: 6px;
+  background: #ccc;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: #ff4d4d;
+}

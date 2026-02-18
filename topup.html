@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TOP UP GAME</title>
+  <link rel="stylesheet" href="hambali.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- STEP 1 -->
+  <div class="step active" id="step1">
+    <h2>Pilih Game</h2>
+    <button onclick="nextStep(2)">Mobile Legends</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="step" id="step2">
+    <h2>Masukkan User ID</h2>
+    <input type="text" id="userid" placeholder="User ID">
+    <input type="text" id="server" placeholder="Server ID">
+    <button onclick="nextStep(3)">Lanjut</button>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="step" id="step3">
+    <h2>Pilih Diamond</h2>
+    <select id="diamond">
+      <option value="">Pilih Diamond</option>
+      <option>86 Diamond</option>
+      <option>172 Diamond</option>
+      <option>257 Diamond</option>
+    </select>
+    <button onclick="nextStep(4)">Lanjut</button>
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="step" id="step4">
+    <h2>Pilih Pembayaran</h2>
+    <select id="payment">
+      <option>DANA</option>
+      <option>OVO</option>
+      <option>GOPAY</option>
+      <option>TRANSFER BANK</option>
+    </select>
+    <button onclick="nextStep(5)">Bayar</button>
+  </div>
+
+  <!-- STEP 5 -->
+  <div class="step" id="step5">
+    <h2>Proses Top Up</h2>
+    <p>Sedang memproses...</p>
+    <div class="loader"></div>
+  </div>
+
+  <!-- STEP 6 -->
+  <div class="step" id="step6">
+    <h2>🎉 Top Up Berhasil!</h2>
+    <p>Diamond telah masuk ke akun Anda</p>
+  </div>
+
+</div>
+
+<script src="scrip.js"></script>
+</body>
+</html>
+
+
